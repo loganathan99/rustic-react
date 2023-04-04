@@ -1,0 +1,32 @@
+.bg-file-drop {
+    background-color: #f9fafb;
+    opacity: 0.8;
+    background: radial-gradient(
+        circle,
+        transparent 20%,
+        #f9fafb 20%,
+        #f9fafb 80%,
+        transparent 80%,
+        transparent
+      ),
+      radial-gradient(
+          circle,
+          transparent 20%,
+          #f9fafb 20%,
+          #f9fafb 80%,
+          transparent 80%,
+          transparent
+        )
+        30px 30px,
+      linear-gradient(
+          #a855f7 2.4000000000000004px,
+          transparent 2.4000000000000004px
+        )
+        0 -1.2000000000000002px,
+      linear-gradient(
+          90deg,
+          #a855f7 2.4000000000000004px,
+          #f9fafb 2.4000000000000004px
+        ) -1.2000000000000002px 0;
+    background-size: 60px 60px, 60px 60px, 30px 30px, 30px 30px;
+  }

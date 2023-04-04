@@ -1,0 +1,23 @@
+# TextBorder
+
+This is the `RusticUI` TextBorder Component. It is fairly simple. You just wrap whatever content you want inside of `<TextBorder>` and `</TextBorder>`.
+
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { TextBorder } from "./TextBorder";
+
+<Meta title="TextBorder" component={TextBorder} />
+
+export const Template = (args) => (
+  <TextBorder {...args}>{args.children}</TextBorder>
+);
+
+<Canvas>
+  <Story
+    name="TextBorder"
+    args={{
+      children: <h1>Example TextBorder</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

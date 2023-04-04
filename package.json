@@ -1,6 +1,6 @@
 {
   "name": "@technocis/rustic-react",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Rustic UI Components for React",
   "scripts": {
     "test": "jest",
@@ -55,5 +55,10 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@types/bwip-js": "^3.2.0",
+    "bwip-js": "^3.3.0",
+    "react-icons": "^4.8.0"
+  }
 }

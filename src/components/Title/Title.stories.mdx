@@ -1,0 +1,22 @@
+# Title
+
+This is the `RusticUI` Title Component. It is fairly simple. You just wrap whatever content you want inside of `<Title>` and `</Title>`.
+
+import { Canvas, Meta, Story, ArgsTitle } from "@storybook/addon-docs";
+import { IDisplayTitleProps } from "./Title";
+
+<Meta title="Title" component={Title} />
+
+export const Template = (args) => <Title {...args}>{args.children}</Title>;
+
+<Canvas>
+  <Story
+    name="Title"
+    args={{
+      children: <h1>Example Title</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+;

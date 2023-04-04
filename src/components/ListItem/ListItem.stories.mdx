@@ -1,0 +1,23 @@
+# ListItem
+
+This is the `RusticUI` ListItem Component. It is fairly simple. You just wrap whatever content you want inside of `<ListItem>` and `</ListItem>`.
+
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { ListItem } from "./ListItem";
+
+<Meta title="ListItem" component={ListItem} />
+
+export const Template = (args) => (
+  <ListItem {...args}>{args.children}</ListItem>
+);
+
+<Canvas>
+  <Story
+    name="ListItem"
+    args={{
+      children: <h1>Example ListItem</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

@@ -1,0 +1,22 @@
+# Table
+
+This is the `RusticUI` Table Component. It is fairly simple. You just wrap whatever content you want inside of `<Table>` and `</Table>`.
+
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { Table, ITableProps, ITableProps, ITableColumn } from "./Table";
+
+<Meta title="Table" component={Table} />
+
+export const Template = (args) => <Table {...args}>{args.children}</Table>;
+
+<Canvas>
+  <Story
+    name="Table"
+    args={{
+      children: <h1>Example Table</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+;

@@ -1,0 +1,23 @@
+
+.timer-icon {
+    background: -webkit-linear-gradient(left, currentColor 50%, #eee 50%);
+    border-radius: 100%;
+    height: calc(var(--size) * 1px);
+    width: calc(var(--size) * 1px);
+    position: relative;
+    -webkit-animation: time calc(var(--duration) * 1s) steps(1000, start) infinite;
+    -webkit-mask: radial-gradient(transparent 50%, #fff 50%);
+    mask: radial-gradient(transparent 50%, #fff 50%);
+  }
+  .timer-icon-mask {
+    border-radius: 110% 0 0 110% / 40% 0 0 40%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    -webkit-animation: mask calc(var(--duration) * 1s) steps(500, start) infinite;
+    -webkit-transform-origin: 100% 50%;
+  }
+  
+ 

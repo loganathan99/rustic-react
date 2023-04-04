@@ -1,0 +1,21 @@
+# Modal
+
+This is the `RusticUI` Modal Component. It is fairly simple. You just wrap whatever content you want inside of `<Modal>` and `</Modal>`.
+
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { Modal } from "./Modal";
+
+<Meta title="Modal" component={Modal} />
+
+export const Template = (args) => <Modal {...args}>{args.children}</Modal>;
+
+<Canvas>
+  <Story
+    name="Modal"
+    args={{
+      children: <h1>Example Modal</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

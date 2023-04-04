@@ -1,0 +1,23 @@
+# StatisticCard
+
+This is the `RusticUI` StatisticCard Component. It is fairly simple. You just wrap whatever content you want inside of `<StatisticCard>` and `</StatisticCard>`.
+
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { StatisticCard } from "./StatisticCard";
+
+<Meta title="StatisticCard" component={StatisticCard} />
+
+export const Template = (args) => (
+  <StatisticCard {...args}>{args.children}</StatisticCard>
+);
+
+<Canvas>
+  <Story
+    name="StatisticCard"
+    args={{
+      children: <h1>Example StatisticCard</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

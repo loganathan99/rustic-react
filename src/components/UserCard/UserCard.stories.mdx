@@ -1,0 +1,24 @@
+# UserCard
+
+This is the `RusticUI` UserCard Component. It is fairly simple. You just wrap whatever content you want inside of `<UserCard>` and `</UserCard>`.
+
+import { Canvas, Meta, Story, ArgsUserCard } from "@storybook/addon-docs";
+import { IDisplayUserCardProps } from "./UserCard";
+
+<Meta UserCard="UserCard" component={UserCard} />
+
+export const Template = (args) => (
+  <UserCard {...args}>{args.children}</UserCard>
+);
+
+<Canvas>
+  <Story
+    name="UserCard"
+    args={{
+      children: <h1>Example UserCard</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+;

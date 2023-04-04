@@ -1,0 +1,21 @@
+# QrCode
+
+This is the `RusticUI` QrCode Component. It is fairly simple. You just wrap whatever content you want inside of `<QrCode>` and `</QrCode>`.
+
+import { Canvas, Meta, Story, ArgsTable } from "@storybook/addon-docs";
+import { QrCode } from "./QrCode";
+
+<Meta title="QrCode" component={QrCode} />
+
+export const Template = (args) => <QrCode {...args}>{args.children}</QrCode>;
+
+<Canvas>
+  <Story
+    name="QrCode"
+    args={{
+      children: <h1>Example QrCode</h1>,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
